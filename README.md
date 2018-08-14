@@ -4,7 +4,7 @@ Steps involved in accessing the SV page:
 1) Go to Heroku Live link:
 https://fierce-mesa-85443.herokuapp.com
 
-2)Login With your google account
+2) Login With your google account
 
 3) You will be prompted with the default thumbnails of currently live videos on you tube
 

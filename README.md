@@ -14,7 +14,7 @@ https://fierce-mesa-85443.herokuapp.com
 
 6) Close the video with power off button next to chat window top right corner
 
-7) Thats it
+7) Done!!
 
 
 

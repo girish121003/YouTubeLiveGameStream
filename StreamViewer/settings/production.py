@@ -28,7 +28,7 @@ SECRET_KEY = '5@m+1ygg(-q^_6zyg#&pdklhgwqg7ifk99fu&jt82+-$408qx='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['fierce-mesa-85443.herokuapp.com']
+ALLOWED_HOSTS = ['girish-stream-viewer.herokuapp.com']
 
 
 # Application definition

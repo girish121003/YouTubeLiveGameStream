@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'social_django',
 
 
+
 ]
 
 MIDDLEWARE = [
@@ -52,7 +53,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
+X_FRAME_OPTIONS = 'ALLOW'
 
 AUTHENTICATION_BACKENDS = (
     'social_core.backends.open_id.OpenIdAuth',  # for Google authentication

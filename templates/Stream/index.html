@@ -23,8 +23,9 @@
 
                     <ul class="main-nav">
                         <li><a href="{% url 'index'%}">home</a></li>
+                        {# these are fancy navigation links doesnt do anything just to make website look good#}
                         <li><a href="#works">Live</a></li>
-                        <li><a href="#cities">Game</a></li>
+                        <li><a href="#cities">Stats</a></li>
                         <li><a href="#plans">Channels</a></li>
                         {% if user.is_authenticated %}
 
@@ -39,7 +40,7 @@
 
             <div id="slides">
                 <div class="overlay"></div>
-
+d
                     <div class="slides-container">
 
                       <img src="{% static 'img/img1.jpeg'%}"/>
@@ -48,48 +49,46 @@
                       <img src="{% static 'img/img4.jpeg'%}"/>
                       <img src="{% static 'img/img5.jpeg'%}"/>
                     </div>
-
                       <div class="TitleMessage">
                         <div class="heading">
+                         <div class="inner">
+                         {#  check user authenication if authenicated then allow user to see the list of youtube videos else ask for credentials#}
                             {% if user.is_authenticated %}
-                            <ul class="giru">
-                                 {% for video in videos %}
-                                    <li class="giruli">
+                                <nav class="slides-navigation">
+                                    <a href="#" class="next"></a>
+                                    <a href="#" class="prev"></a>
+                                </nav>
 
+                                <ul class="giru">
+                                {# getting the data from views.py context dictionary and seperating the video id and url  #}
+                                     {% for video,url in videos.items %}
+                                         {# basically adding a variable to add the new elementid value every time for loop iterate in order to avoid ambiguity  #}
+                                         {% if forloop.counter < video|length %}
 
-                                         <iframe width="250" height="200" src="https://www.youtube.com/embed/{{ video }}"></iframe>
-                                    </li>
+                                             {#  creating a new list item every time loop iterate and setting loop counter value to change the id value such as youThumnail1,youThumbnail2 and so on.. #}
+                                     <li class="giruli">
+                                        <a href="#"><input type="image" id="youThumbnail{{ forloop.counter }}" src="{{ url }}" value="{{ video }}" > </a>
+                                     </li>
+                                    {% endif %}
                                  {% endfor %}
                             </ul>
 
+
                         {% else %}
-                                 <a href="{% url 'social:begin' 'google-oauth2' %}" class="btn btn-ghost">Login with Google</a><br>
+                                 <a href="{% url 'social:begin' 'google-oauth2' %}" class="btn btn-ghost">Login With Google</a><br>
                         {% endif %}
-
-
-                        </div>
-
-                    </div>
-
-                    <nav class="slides-navigation">
-                        <a href="#" class="next"></a>
-                        <a href="#" class="prev"></a>
-                    </nav>
-
-
-
-            </div>
-
+                         </div>
+                        {# This division is used to show video when a user request video out of a thumbnail given above #}
+                            <div id="divId1" class="hideDivs" >
+                                <img class="btnQuit" src="http://pluspng.com/img-png/exit-png-new-svg-image-2000.png">
+                                <iframe id="divIframeVideo" width="500px" height="500px"  allowfullscreen="allowfullscreen"></iframe>
+                                <iframe id="divIframeChat"height="500px" style="margin-left: 100px;">
+                                </iframe>
+                            </div>
         </header>
-        <section >
-            <div>
-
-            </div>
-        </section>
-
         </body>
-   <script src="{% static 'js/vendor/jquery.superslides.min.js'%}"></script>
-<script src="{% static 'js/main.js'%}"></script>
+        <script src="{% static 'js/vendor/jquery.superslides.min.js'%}"></script>
+        <script src="{% static 'js/main.js'%}"></script>
 </html>
 
 

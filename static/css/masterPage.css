@@ -129,9 +129,9 @@ body{
     z-index: 5;
 }
 .logo{
-    width: 150px;
-	height: 150px;
-	border-radius: 50%;
+    width: 300px;
+	height: 50px;
+
     float: left;
 }
 
@@ -145,7 +145,7 @@ body{
 }
 
 .giru{
-	    display: inline-flex;
+    display: inline-flex;
     list-style: none;
 }
 
@@ -175,4 +175,55 @@ font-family: 'Varela Round', sans-serif;
 .tblcontent{
     alignment: center;
 }
+.youThumbnail{
+    width:300px;
+    height: 234px;
+}
+
+#divId1
+{
+    background: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    color: #000;
+    width: 1000px;
+    height: 500px;
+    display: none;
+    left: 100px;
+    bottom: 100px;
+}
+#divIframeVideo{
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+#divIframeChat{
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+#divIframeChat:hover {
+    transform: scale(1.2 , 1.2); /** default is 1, scale it to 1.5 */
+    opacity: 1;
+}
+#divIframeVideo:hover{
+    transform: scale(1.2, 1.2); /** default is 1, scale it to 1.5 */
+    opacity: 1;
+}
+
+.btnQuit{
+    height: 40px;
+    width: 40px;
+    float: right;
+    color: red;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+}
+.btnQuit:hover {
+    transform: scale(1.5, 1.5); /* Increasing the size from 1 to 1.5 on mouse hover */
+    opacity: 1;
+}
+
+
+
+
 

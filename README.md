@@ -37,13 +37,15 @@ itself
 which is what i used in my one of the project and integrated in stream viewer application too.'
 
 Pending Work Implementation plan:-
-1) For storing Alex text messages i created a database table, get the live chat out of api using youtube.livechatmessages and 
+
+1. For storing Alex text messages i created a database table, get the live chat out of api using youtube.livechatmessages and 
 integrate those messages in my chat window so that i could handle events that whenever alex sends a message an event is 
 triggered and would save the message to database.
-2)Stats:- To show the stats, interacting with video id and get the statistics such as like counts , view counts, message counts
+
+2. Stats:- To show the stats, interacting with video id and get the statistics such as like counts , view counts, message counts
 I planned grab this data from api and store it in my database and show it to Alex everytime he logs in his account. I would represent 
 the data right below the thumbnails.
-3)To make this application mobile responsive i would use gridvidew from bootstrap to divide the application in differnt grid and assign 
+3. To make this application mobile responsive i would use gridvidew from bootstrap to divide the application in differnt grid and assign 
 there col-size accordingly so that when a user access the application on mobile devices he will be able to see all the content on single 
 screen.
 

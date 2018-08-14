@@ -8,7 +8,7 @@ Django==2.0.8
 django-crispy-forms==1.7.2
 django-pyodbc-azure==2.0.6.1
 Flask==1.0.2
--e git+https://github.com/girish121003/YouTubeLiveGameStream.git@8e218097015fd840512de6adb985d983a2714920#egg=gdata
+
 google-api-python-client==1.7.4
 google-auth==1.5.1
 google-auth-httplib2==0.0.3

@@ -1,1 +1,1 @@
-"web: gunicorn StreamViewer.wsgi" 
+web: gunicorn StreamViewer.wsgi

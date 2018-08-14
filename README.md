@@ -2,7 +2,7 @@
 # Steps involved in accessing the SV page:
 
 1) Go to Heroku Live link:
-https://fierce-mesa-85443.herokuapp.com
+https://girish-stream-viewer.herokuapp.com
 
 2) Login With your google account
 

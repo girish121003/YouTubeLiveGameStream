@@ -45,11 +45,11 @@ pycparser==2.18
 PyInstaller==3.3.1
 PyJWT==1.5.3
 pyodbc==4.0.22
-pypiwin32==223
+
 pytest==3.6.2
 python3-openid==3.1.0
 pytz==2017.3
-pywin32>=223
+
 requests==2.18.4
 requests-oauthlib==0.8.0
 rsa==3.4.2

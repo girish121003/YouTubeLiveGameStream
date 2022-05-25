@@ -43,7 +43,7 @@ pyasn1==0.4.4
 pyasn1-modules==0.2.2
 pycparser==2.18
 PyInstaller==3.3.1
-PyJWT==1.5.3
+PyJWT==2.4.0
 pyodbc==4.0.22
 pytest==3.6.2
 python3-openid==3.1.0
